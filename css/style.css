@@ -1,0 +1,403 @@
+:root {
+    --bg-first-color: #fb5b21;
+    --bg-second-color: #f5f5f5;
+    --bg-third-color: #ffffff;
+}
+
+.bg-1 {
+    background-color: var(--bg-first-color) !important;
+}
+
+.bg-2 {
+    background-color: var(--bg-second-color) !important;
+}
+
+.bg-3 {
+    background-color: var(--bg-third-color) !important;
+}
+
+.text-1 {
+    color: var(--bg-first-color) !important;
+}
+
+.text-2 {
+    color: var(--bg-second-color) !important;
+}
+
+.text-3 {
+    color: var(--bg-third-color) !important;
+}
+
+.border {
+    border: 2px solid var(--bg-first-color) !important;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+@font-face {
+    font-family: OpenSans-Regular;
+    src: url(../font/Open_Sans/OpenSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: Roboto-Regular;
+    src: url(../font/Roboto/Roboto-Regular.ttf);
+}
+
+.open {
+    font-family: OpenSans-Regular;
+}
+
+.roboto {
+    font-family: Roboto-Regular;
+}
+
+h2 {
+    font-family: Roboto-Regular;
+}
+
+h3 {
+    font-family: Roboto-Regular;
+}
+
+span {
+    font-family: Roboto-Regular;
+}
+
+p {
+    text-align: left;
+    font-family: OpenSans-Regular;
+}
+
+table {
+    font-family: OpenSans-Regular;
+}
+
+body {
+    z-index: 100;
+}
+
+.hover1 {
+    transition: all .5s;
+}
+
+.hover1:hover {
+    transform: scale(1.2, 1.2) rotate(360deg);
+    color: black !important;
+}
+
+.hover2 {
+    transition: all .5s;
+}
+
+.hover2:hover {
+    letter-spacing: 4px;
+    color: var(--bg-first-color) !important;
+}
+
+.hover3 {
+    transition: all 1s;
+}
+
+.hover3:hover {
+    filter: grayscale(200%);
+}
+
+.hover4 {
+    transition: all .5s;
+}
+
+.hover4:hover {
+    transform: rotate(360deg);
+}
+
+.builder h3 {
+    position: relative;
+}
+
+.builder h3::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: var(--bg-first-color);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .5s;
+    transform: rotateX(90deg);
+}
+
+.builder h3:hover::before {
+    color: white !important;
+    filter: blur(2px);
+    text-align: center;
+    transform: rotateY(0deg);
+}
+
+.hover5 {
+    transition: all .5s;
+}
+
+.hover5:hover {
+    filter: blur(2px);
+}
+
+table {
+    perspective: 200px;
+}
+
+td .td {
+    transition: linear .5s;
+}
+
+td .td:hover {
+    transform: translateZ(10px);
+    box-shadow: 1px 1px 10px black;
+}
+
+.corporate .row .col-12 a {
+    position: relative;
+    color: white !important;
+}
+
+.corporate .row .col-12 a::before {
+    content: "";
+    width: 0%;
+    height: 3px;
+    background-color: var(--bg-first-color);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    transition: all .5s;
+}
+
+.corporate .row .col-12:hover a::before {
+    width: 100%;
+}
+
+.photo .row .col {
+    overflow: hidden;
+}
+
+.photo .row .col img {
+    transition: all .5s;
+}
+
+.photo .row .col img:hover {
+    transform: scale(1.2, 1.2);
+    filter: hue-rotate(90deg);
+}
+
+
+/* ================ Header section Start ================ */
+
+.header nav {
+    position: relative;
+}
+
+.header nav ul li>ul {
+    position: absolute;
+    top: 90%;
+    z-index: -10;
+    list-style: none;
+    padding: 0;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    transform: translateY(20px);
+    opacity: 0;
+    border-radius: 10px;
+    transition: all 1s;
+}
+
+.header nav ul li>ul li {
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 10px;
+    transition: all 0.5s;
+}
+
+.header nav ul li>ul li:hover {
+    background-color: var(--bg-first-color);
+}
+
+.header nav ul li:hover>ul {
+    transform: translateY(0);
+    opacity: 1;
+    z-index: 101;
+}
+
+.header nav ul li a {
+    font-family: OpenSans-Regular;
+    font-weight: 700;
+}
+
+.header nav ul li a:hover {
+    color: var(--bg-first-color) !important;
+}
+
+
+/* =========== Hover Effect =========== */
+
+.collapse>ul li {
+    position: relative;
+}
+
+.collapse>ul li a::before {
+    content: " ";
+    width: 0;
+    height: 3px;
+    background-color: #fb5b21;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: linear 0.5s;
+}
+
+.collapse>ul li:hover a::before {
+    width: 50%;
+    transform: translateX(100%);
+}
+
+
+/* ================ Fitness section Start ================ */
+
+.fitness {
+    position: relative;
+}
+
+.fitne {
+    height: auto;
+    /* background-image: url(../image/about-fitness-img.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center, center; */
+    position: relative;
+    padding: 20px 0;
+    text-align: left;
+    color: #ffffff;
+    font-family: Roboto-Regular !important;
+}
+
+.fitne img {
+    width: 80%;
+}
+
+.fitne h1 {
+    position: absolute;
+    top: 25%;
+    right: 0;
+}
+
+
+/* ================== Builder section Start ================== */
+
+.builder .row .builder-l {
+    text-align: center;
+    /* background-image: url(../image/being-builder.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain; */
+}
+
+.builder img {
+    width: 80%;
+}
+
+.builder .row .builder-r h2 {
+    font-size: 4em;
+}
+
+.builder .row .builder-r h3 {
+    letter-spacing: 25px;
+    color: #b3b3b3 !important;
+}
+
+.builder .row .builder-r button {
+    border: none;
+    text-transform: uppercase;
+}
+
+.rounded-pill {
+    transition: linear 0.3s;
+}
+
+.rounded-pill:hover {
+    transform: scale(1.1, 1.1);
+    filter: drop-shadow(1px 1px 10px gray);
+}
+
+
+/* ====================== Featured section end ====================== */
+
+.featured .card img {
+    filter: grayscale(80%);
+    transition: all 1s;
+}
+
+.featured .card img:hover {
+    filter: grayscale(0%);
+    transform: scale(1.1, 1.1);
+}
+
+
+/* ================== Schedule section Start ================== */
+
+.schedule {
+    background-color: #11111198;
+}
+
+.schedule table,
+tr td {
+    border: 1px solid rgba(255, 255, 255, 0.288);
+}
+
+
+/* ====================== Client section end ====================== */
+
+.client .carousel .carousel-item .hr {
+    border: 1px solid var(--bg-first-color);
+    width: 40px;
+    margin: 20px 0;
+}
+
+
+/* ============== Footer section Start ============== */
+
+.footer {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.footer p {
+    color: #b3b3b3;
+}
+
+.footer .footicon .i {
+    width: 32px;
+    height: 32px;
+    display: inline-block;
+    border-radius: 50%;
+    background-color: var(--bg-first-color);
+    transition: all 0.5s;
+}
+
+.footer .footicon i {
+    margin-top: 8px;
+}
+
+.footer .footicon .i:hover {
+    background-color: var(--bg-third-color);
+}
+
+.footer .footicon .i a {
+    transition: all 0.5s;
+}
+
+.footer .footicon .i:hover a>i {
+    color: var(--bg-first-color) !important;
+}
